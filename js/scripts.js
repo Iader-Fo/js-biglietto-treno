@@ -1,9 +1,10 @@
 // CHIEDI N. DI KM
-const numkm = prompt("Quanti chilometri desidera percorrere?");
+//parseInt p vedere il valore in numero
+const numkm = parseInt(prompt("Quanti chilometri desidera percorrere?"));
 console.log ("Il passeggero vuole percorrere " + numkm + " km ");
 
 // CHIEDI ETA'
-const eta = prompt( "Quanti anni ha?");
+const eta = parseInt(prompt( "Quanti anni ha?"));
 console.log ("Il passeggero ha " + eta + " anni ");
 
 // CALCOLA PREZZO X KM
@@ -14,9 +15,10 @@ console.log ("Il prezzo è " + prezzo + " € ");
 if (eta < 18) {
     prezzo = prezzo * 0.8;
     console.log("Lo sconto del 20% è stato applicato: " + prezzo + " € ");
+} 
 
 // SE MAGGIORE DI 65 ANNI APPLICA SCONTO 40%
-} else if (eta >= 65) {
+else if (eta >= 65) {
     prezzo = prezzo * 0.6;
     console.log("Lo sconto del 40% è stato applicato: " + prezzo + " € ");
 }
@@ -27,7 +29,7 @@ console.log("Prezzo finale con 2 decimali: " + prezzo + " € ");
 
 
 //STAMPA PREZZO IN HTML
-document.write("Il prezzo finale del biglietto è: " + prezzo + " € ")
+alert("Il prezzo finale del biglietto è: " + prezzo + " € ")
 
 
 
